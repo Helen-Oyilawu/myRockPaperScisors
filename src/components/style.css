@@ -1,0 +1,205 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: url(../assets/Homepage.png);
+    /* background-repeat: repeat; */
+}
+.app{
+    width: 100w;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.Container{
+    width: 60vw;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+}
+.title{
+    background-color: #ffffffa1;
+    border-radius: 5px;
+    box-shadow: 3px 3px 2px rgba(211, 211, 211, 0.856);
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: fantasy;
+}
+
+.scoreCtn{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+img, .image{
+    width: 100%;
+    height: 70%;
+    object-fit: contain;
+    border-radius: 100px;
+}
+
+.score h3{
+    margin-top: 0;
+    padding: 10px;
+    background-color: navy;
+    color: #fff;
+}
+
+.score{
+    width: 200px;
+    background-color: #ffffffb4;
+    text-align: center;
+    /* margin-bottom: 5px; */
+}
+
+.results{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+}
+
+.playerhand, .computerhand{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #ffffffad;
+    box-shadow: 3px 3px 2px lightgray;
+    width: 200px;
+    height: 150px;
+    border-radius: 5px;
+}
+
+.resultwinner{
+    font-size: 40px;
+    color: white;
+}
+
+.texthold{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+ .resultmessage{
+    color: white;
+    font-size: 20px;
+ }
+
+ .choicectn{
+    height: 100px;
+    width: 100%;
+    background-color: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+ }
+
+ .choicebtn{
+    width: 120px;
+    height: 80px;
+    background-color: white;
+    box-shadow: 3px 3px 2px lightgray;
+    /* font-weight: 900; */
+    border-radius: 20px;
+    display: flex;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    
+    /* gap: 10px; */
+ }
+
+ .play{
+    width: 200px;
+    height: 50px;
+    background-color: whitesmoke;
+    box-shadow: 3px 3px 3px lightgray;
+    font-weight: 900;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 10px;
+    display: flex;
+    margin-left: 296px;
+    margin-top: 10px;
+    border: none;
+    align-items: center;
+    justify-content: center;
+ }
+ 
+ .play:hover{
+    background-color: rgb(7, 7, 66);
+    box-shadow: none;
+    color: white;
+   
+    cursor: pointer;
+    transform: scale(1.05);
+ }
+
+.choicebtn:hover{
+    animation: bounce 2.8s linear infinite;
+    transition: all 350ms;
+    transform: translateY(-50px);
+    /* background-color: rgb(12, 158, 216); */
+    cursor: pointer;
+}
+ @keyframes bounce{
+    from{transform: translateY(-20px);}
+    to{transform: translateY(-10px);}
+ }
+
+ .btn{
+    width: 100%;
+    height: 100%;
+ }
+
+ .activechoice{
+    /* background-color: orange; */
+    transform: scale(1.02);
+ }
+
+ .timer{
+    font-size: 130px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fff;
+    font-weight: 600;
+ }
+
+ .playershake{
+    animation: shake 0.5s ease-in-out infinite;
+ }
+
+ @keyframes shake{
+   0%,
+   100%{
+    transform:rotate(100deg);
+   }
+   50%{
+    transform: rotate(80deg);
+   }
+ }
+
+ .computershake{
+    animation: unshake 0.5s ease-in-out infinite;
+ }
+
+ @keyframes unshake{
+    0%,
+    100%{
+     transform:scaleY(-1)   rotate(-100deg);
+    }
+    50%{
+     transform:scaleY(-1)  rotate(-80deg);
+    }
+  }

@@ -1,0 +1,35 @@
+.Home{
+    width: 100vw;
+    height: 100vh;
+    background: url(../assets/Homepage.png);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* padding: 20px; */
+    gap: 50px;
+    overflow: hidden;
+
+ 
+}
+
+.logo{
+    width: 60%;
+    height: 50%;
+    object-fit: contain;
+    /* margin-top: 20px; */
+}
+.Home button{
+    padding: 10px;
+    width: 15%;
+    background-color: #858e49;
+    border-radius: 10px;
+    border: 3px solid rgb(175,180,24);
+    font-size: 30px;
+    font-weight: 900;
+    color: white;
+    cursor: pointer;
+
+}
+
+
